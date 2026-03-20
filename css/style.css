@@ -1,2 +1,119 @@
-@import url('reset.css');
-@import url('font.css');
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Andale Mono", monospace;
+  overflow-x: hidden;
+}
+
+.screen {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.plaza {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  font-size: 250px;
+  font-weight: 600;
+  line-height: 0.70;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.online-vert {
+  position: absolute;
+  top: 18%;
+  left: 1vw;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 0.78;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.obrazovanie {
+  position: absolute;
+  bottom: 1%;         /* начинается сразу под ОНЛАЙН */
+  left: 1vw;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 0.80;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.sculpture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1800px;
+  height: 800px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.blue-vertical-right {
+  position: absolute;
+  bottom: 0%;
+  right: 20vw;
+  width: clamp(130px, 17vw, 240px);
+  height: 350px;
+  background: #0055ff;
+  z-index: 3;
+}
+
+.blue-horizontal-mid {
+  position: absolute;
+  top: 1%;
+  left: 32%;
+  width: 250px;
+  height: 500px;
+  background: #0055ff;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.day-vert {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 0.72;
+  text-transform: uppercase;
+  z-index: 4;
+}
+
+.date-vert {
+  position: absolute;
+  bottom: 1%;
+  right: 1vw;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 0.78;
+  z-index: 4;
+}
+
+.credit-right {
+  position: absolute;
+  top: 0%;
+  right: 11%;
+  font-size: clamp(2.2rem, 3.2vw, 3.8rem);
+  line-height: 1.25;
+  text-align: right;
+  z-index: 4;
+}
