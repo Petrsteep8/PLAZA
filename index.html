@@ -3,37 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PLAZA DAY — 09/2 2026</title>
-  
-  <!-- reset → fonts → основной стиль -->
+  <title>PLAZA - Онлайн образование</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="screen">
+  <section class="screen">
+    <div class="plaza">PLAZA</div>
+    <div class="online-vert">ОНЛАЙН</div>
+    <div class="obrazovanie">ОБРАЗОВАНИЕ</div>
+    <img class="sculpture" src="./pictures/Rectangle 17.jpg" alt="скульптура">
+    <div class="blue-vertical-right"></div>
+    <div class="blue-horizontal-mid"></div>
+    <div class="day-vert">VR & AR</div>
+    <div class="credit-right">Пётр<br>Салмин<br>2026</div>
+  </section>
 
-  <div class="plaza">PLAZA</div>
+  <section class="models-section">
 
-  <div class="online-vert">ОНЛАЙН</div>
+    <div class="model-entry" id="entry-1">
+      <div class="ar-coords">LAT: 55.75 | LNG: 37.61</div>
+      <div class="ar-status">STATUS: RENDER_READY</div>
+      <div class="blue-horizontal-second"></div>
+      <div class="model-info">
+        <h2 class="toggle-info" data-target="info-history">ИСТОРИЯ</h2>
+        <div class="description-block" id="info-history">
+          <p>Исследование античных форм и классической эстетики в цифровом пространстве. Виртуальная реставрация объектов через AR-интерфейсы.</p>
+          <span class="close-btn">CLOSE</span>
+        </div>
+      </div>
+      <div class="canvas-wrapper" id="canvas-history"></div>
+    </div>
 
-  <div class="obrazovanie">ОБРАЗОВАНИЕ</div>
+    <div class="model-entry" id="entry-2">
+      <div class="ar-coords">LAT: 55.75 | LNG: 37.61</div>
+      <div class="ar-status">STATUS: RENDER_READY</div>
+      <div class="model-info">
+        <h2 class="toggle-info" data-target="info-science">НАУКА</h2>
+        <div class="description-block" id="info-science">
+          <p>Инструменты познания от механики прошлого до VR-технологий будущего. Визуализация физических процессов.</p>
+          <span class="close-btn">CLOSE</span>
+        </div>
+      </div>
+      <div class="canvas-wrapper" id="canvas-science"></div>
+    </div>
+  </section>
 
-  <img class="sculpture" src="./pictures/Rectangle 17.jpg" alt="скульптура с наушниками">
-
-  <div class="blue-vertical-right"></div>
-  <div class="blue-horizontal-mid"></div>
-
-  <div class="day-vert">ДЕНЬ</div>
-
-  <div class="date-vert">09/2</div>
-
-  <div class="credit-right">
-    Петр<br>Салмин<br>2026
-  </div>
-
-</div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>
