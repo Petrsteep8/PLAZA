@@ -63,7 +63,6 @@ document.querySelectorAll('.toggle-info').forEach(button => {
         });
 
         infoBlock.classList.add('active');
-        console.log(`DATA_RETRIEVAL: ${targetId} initialized...`);
     });
 });
 
